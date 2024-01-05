@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.img-logo{
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+
+.img-icon-gmail{
+  position: relative;
+  bottom: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+nav{
+  position: fixed !important;
+  z-index: 20;
+  background-color: #bf9cfc;
+  left: 0;
+  width: 100%;
+  text-align: center; 
+}
+
+footer{
+  margin-top: 450px;
+  background-color: #bf9cfc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+ .title-form{
+   text-align: center;
+   font-size: 24px;
+   margin-top: 100px;
+   font-weight: 700;
+ }
+ 
+  .form-container{
+     background-color: #bf9cfc;
+     padding: 50px;
+     border-radius: 6px;
+     margin-bottom: 150px;
+  }
+
+  .btn-form{
+    color: white !important;
+    background-color: #9b62fd !important;
+  }
+ 
+  .btn-form:hover{
+     background-color: #7a65a0 !important;
+  }
