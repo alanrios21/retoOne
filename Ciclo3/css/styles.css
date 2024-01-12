@@ -10,6 +10,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.caja{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.p-empresa{
+  text-align: justify;
+  padding: 40px;
+  margin-top: 100px !important;
+  margin-left: 200px;
+}
+
 .img-logo{
   filter: brightness(1.1);
   mix-blend-mode: multiply;
@@ -78,4 +91,23 @@ footer{
  
   .btn-form:hover{
      background-color: #7a65a0 !important;
+  }
+
+  .div-profile{
+    text-align: center; 
+    margin-left: 200px;
+  }
+
+  @media (max-width: 990px) {
+    .caja{
+      flex-direction: column !important;
+      margin: 0 auto;
+    }
+    .div-profile{
+      margin-left: 0px;
+    }
+    .p-empresa{
+      margin-left: 0px;
+      margin-top: 0px !important;
+    }
   }
